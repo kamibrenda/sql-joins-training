@@ -17,10 +17,10 @@ Because it excludes the orders table data as it only picks the data with commona
 The left join picks all data from the left table and any related data in the table being joined to and for the ones that have no relation have null records while inner join only picks the common data between the two tables 
 
 ### 3. Why did you start with the customers table?
-(placeholder)
+The customers table had to serve as the base table as the aim was to get the number of orders per customers therefore the order_id present served as the foreign key from the orders table 
 
 **b. What would have happened if you used an INNER JOIN instead?**  
-(placeholder)
+It would have excluded customers without an order 
 
 ### 4. Describe the chain of keys you used to link customers all the way to sellers
 (placeholder)
