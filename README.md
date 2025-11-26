@@ -23,10 +23,26 @@ The customers table had to serve as the base table as the aim was to get the num
 It would have excluded customers without an order 
 
 ### 4. Describe the chain of keys you used to link customers all the way to sellers
-(placeholder)
+The customers table is the base table and used a left join for all joins amongst the tables being used starting with the orders table using the customer_id. Then the order_items table joined to the orders table using the order_id. The sellers table was the last table joined to the order_items table using the seller_id.
 
 ## Final Report Questions to Be Answered
 
-[ ] **Q1:** What is the total revenue from products sold in the `cama_mesa_banho` category?  
+[ ] **Q1:** What is the total revenue from products sold in the `cama_mesa_banho` category?
+$ 863.88
+
+I  utilised the products table as the base table and did a inner join to the order_items table using the product_id to get the common products from the order_items 
+
 [ ] **Q2:** List all sellers and the count of products they have sold, including sellers who have sold zero products.  
+I had the sellers table as the base table and utilised a left join consistently with the tables starting with the order_items using seller_id and then joined the products table to order_items table using the product_id to get the total products by each seller.
+
+<img width="403" height="472" alt="image" src="https://github.com/user-attachments/assets/bf26073b-0605-4021-aae5-0fb51a9e74d7" />
+
 [ ] **Q3:** What is the average review score for sellers from the state of "RJ"?
+4.10167014613779
+
+I had the sellers table as the base table and utilised a left join consistently with the tables starting with the order_items using seller_id and then joined the order_reviews table to order_items table using the order_id to get the average score of sellers in the state of RJ
+
+
+
+
+
